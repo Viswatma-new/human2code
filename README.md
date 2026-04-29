@@ -1,70 +1,254 @@
-# Getting Started with Create React App
+# Human to CodeHuman to Code is a browser-based IDE built around the concept of UPL (Universal Programming Language).UPL is not a traditional programming language.  It acts as a semantic middle layer between existing programming languages and human-native languages.The goal of Human to Code is to make code easier to understand, edit, and interact with using natural language-like syntax.---# What Is UPL?UPL stands for Universal Programming Language.Instead of directly reading programming syntax like:```jschildren.push(button)
+A user may see something more human-readable like:
+bachche jodo button
+The system understands the meaning behind the code rather than doing direct word replacement.
+Architecture:
+Programming Language↕UPL Semantic Layer↕Human Language Pack
+This means:
+JavaScript ↔ UPL Semantic Layer ↔ Hindi
+NOT:
+JavaScript ↔ Hindi
+This architecture keeps the system scalable, modular, and language-independent.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Main Idea
+Human to Code allows users to:
 
-## Available Scripts
 
-In the project directory, you can run:
+Upload programming files
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Parse them into semantic structures
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Convert them into readable UPL syntax
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Edit them in UPL
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Convert them back into the original language instantly
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Everything runs directly inside the browser.
+No backend server is required.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Browser-based IDE
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Monaco Editor integration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+UPL semantic conversion
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+JavaScript and JSX parsing
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Live synchronization
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+AST visualization
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Original code viewer
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+File upload support
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Human language packs
+
+
+Semantic conversion engine
+
+
+Frontend-only architecture
+
+
+Modern futuristic UI
+
+
+Glassmorphism design
+
+
+Split panel layout
+
+
+
+Parsing System
+The parser is responsible for:
+
+
+Detecting file types
+
+
+Generating AST structures
+
+
+Ignoring decorative comments
+
+
+Understanding semantic meaning
+
+
+Preparing conversion-ready structures
+
+
+Decorative comments are intentionally ignored during semantic parsing.
+Example:
+// ====================// LOGIN SECTION// ====================
+or
+/********************** * USER AUTH **********************/
+These comments:
+
+
+do not become AST nodes
+
+
+do not affect semantic parsing
+
+
+do not become UPL commands
+
+
+However, they remain visible inside the original source viewer.
+
+Conversion System
+The converter handles:
+Programming Language → UPLUPL → Programming Language
+The conversion process is semantic-based rather than simple text replacement.
+This allows:
+
+
+live synchronization
+
+
+reversible conversion
+
+
+better scalability
+
+
+multiple language support
+
+
+
+IDE Workflow
+1. User opens Human to Code2. User enters IDE3. User uploads a file4. File type gets detected5. Parser generates AST6. Converter transforms code into UPL7. UPL appears in editor8. AST appears in structure panel9. Original code appears in source viewer10. User edits UPL11. Changes convert back into original language12. Source updates instantly
+
+Folder Structure
+human-to-code/│├── public/│├── src/│   ││   ├── App.jsx│   ├── App.css│   ││   ├── pages/│   │   └── IDE.jsx│   ││   ├── parser/│   │   └── parser.js│   ││   └── converter/│       └── converter.js│├── package.json└── index.html
+
+UI Design
+The interface is designed to feel:
+
+
+futuristic
+
+
+elegant
+
+
+premium
+
+
+minimal
+
+
+smooth
+
+
+modern
+
+
+developer-focused
+
+
+Design inspiration includes:
+
+
+VS Code
+
+
+Cursor
+
+
+Linear
+
+
+The UI uses:
+
+
+simple CSS
+
+
+dark mode
+
+
+glowing borders
+
+
+glassmorphism styling
+
+
+smooth transitions
+
+
+split layouts
+
+
+
+Technologies Used
+
+
+React JSX
+
+
+Plain JavaScript
+
+
+Monaco Editor
+
+
+Simple CSS
+
+
+No TypeScript.
+No backend server.
+No TailwindCSS.
+No Vite.
+
+Future Goals
+
+
+More programming language support
+
+
+More human language packs
+
+
+Better semantic understanding
+
+
+AI-assisted UPL generation
+
+
+Full project structure parsing
+
+
+Real-time collaboration
+
+
+Visual AST editing
+
+
+Native desktop version
+
+
+
+Vision
+Human to Code aims to make programming more understandable for humans while still remaining fully compatible with real programming languages.
+The project focuses on semantic understanding instead of direct syntax replacement, creating a bridge between human thinking and software development.
